@@ -57,7 +57,7 @@ function Form() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form name="test-form" onSubmit={handleSubmit}>
       <label>
         <input
             type="text"
@@ -105,6 +105,7 @@ function Form() {
         {formValues.passwordError && <p className="error">Password cannot be empty</p>}
     </label>
     <Button boldText="CLAIM YOUR FREE TRIAL" color="green" type="submit" />
+      {/* a href="#" throws a TypeScript error, so I have placed a . also for temp use*/}
       <p className="legal">By clicking the button, you are agreeing to our <a href="#." id="terms">Terms and Services</a></p>
     </form>
   );
