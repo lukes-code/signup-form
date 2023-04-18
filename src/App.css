@@ -68,6 +68,7 @@ input[type=password].error {
   border: 2px solid hsl(0, 100%, 74%);
   background: url('../public/icon-error.svg') no-repeat;
   background-position: calc(100% - 20px) center;
+  color: hsl(0, 100%, 74%);
 }
 
 p.error {
